@@ -9,7 +9,7 @@ const ReviewProvider = ({ children }) => {
 
   const setReview = async (data) => {
     try {
-      const review = await setReviewApi(data);
+       await setReviewApi(data);
       //console.log(review.data);
       getReviewBookById(data.id_libro)
     } catch (error) {
@@ -39,7 +39,7 @@ const ReviewProvider = ({ children }) => {
 
   const deleteReview = async (reviewId, bookId) => {
     try {
-      const response = await deleteReviewIdApi(reviewId);
+      await deleteReviewIdApi(reviewId);
       //console.log("delete review", response)
       getReviewBookById(bookId)
     } catch (error) {

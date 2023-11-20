@@ -189,12 +189,12 @@ const ImageCol = styled(Col)`
 `;
 
 
-const DividerCol = styled(Col)`
+/* const DividerCol = styled(Col)`
   border-left: 1px solid #dee2e6;
   height: 80%;
   margin-top: 20px;
   margin-bottom: 20px;
-`;
+`; */
 
 const StyledImage = styled.img`
   width: 100%;
@@ -208,8 +208,9 @@ const FormCol = styled(Col)`
   justify-content: center;
 `;
 
-const Divider = styled.div`
+/* const Divider = styled.div`
   border-left: 1px solid #dee2e6;
   height: 100%;  
-`;
+`; */
+
 export default RegisterPage;

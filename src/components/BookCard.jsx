@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'; 
-import { useAuth } from '../contexts/AuthContext/AuthContext';
+//import { useAuth } from '../contexts/AuthContext/AuthContext';
 import { Link } from 'react-router-dom';
 import {rendersStars} from '../utils/rendersStars'
 
 const CustomCard = ({book}) => { 
     const { _id: id, cover, nombre, autor, calificacion } = book
   /*   const { isAuth } = useAuth(); */
-    const [isLiked, setIsLiked] = useState(false);
-/* 
+   // const [isLiked, setIsLiked] = useState(false);
+  /* 
     const handleLikeClick = () => {
         setIsLiked(!isLiked);
     }; */
@@ -60,7 +60,7 @@ const CardContainer = styled.div`
   }
 `;
 
-const CardIcons = styled.div`
+/* const CardIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -68,19 +68,19 @@ const CardIcons = styled.div`
   top: 10px;
   right: 10px;
   width: 50px;
-`;
+` */;
 
 const CardLink = styled(Link)`
   text-decoration: none;
   color: inherit;
 `;
 
-const RoundedIcon = styled.div`
+/* const RoundedIcon = styled.div`
   background-color: #fff;  
   border-radius: 50%;      
   padding: 5px;            
   cursor: pointer;
-`;
+`; */
 
 const CardImage = styled.img`
   width: 100%;
