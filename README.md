@@ -80,6 +80,12 @@ $ npm start
 
 Esto iniciará la ejecución y nos mostrará el puerto donde se ejecuta nuestra api.
 
+## Prueba_Despliegue
+Para desplegarlo usé [Netlify](https://app.netlify.com//), que está enlazada con mis  repositorios de github, seleccioné el repositorio que queria subir, agregé las respectivas variables de entorno y lo desplegué.
+
+=> Front desplegadoi: https://books-review-front.netlify.app/
+
+
 ## Vistas
 <p align="center">
   <a href="#"> 
