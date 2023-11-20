@@ -22,7 +22,7 @@ const BookProvider = ({ children }) => {
     try {
       const allBooks = await getAllBooksApi(); 
       setBooks(allBooks.data);
-      //console.log(allBooks.data)
+      console.log(allBooks.data)
     } catch (error) {
       console.log("error bookContext [get all]:  ",error)
     }

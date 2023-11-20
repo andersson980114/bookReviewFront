@@ -6,11 +6,15 @@ import { MdDelete } from 'react-icons/md';
 import { useReview } from '../contexts/ReviewContext/ReviewContext';
 
 const ReviewItem = ({ review }) => {
-  const { user } = useAuth();
+  const { user, isAuth } = useAuth();
   const { _id, id_usuario, id_libro, calificación, reseña } = review;
   const { deleteReview } = useReview() 
 
-  const isCurrentUserReview = user.id === id_usuario._id;
+  let isCurrentUserReview = false
+  
+  if(isAuth){
+     isCurrentUserReview = user.id === id_usuario._id;
+  }
  
   const handleDeleteClick = (id) => {
     deleteReview(id, id_libro._id) 
