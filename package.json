@@ -20,12 +20,13 @@
     "react-rating-stars-component": "^2.2.0",
     "react-router-dom": "^6.4.0",
     "react-scripts": "5.0.1",
+    "serve": "^14.2.1",
     "styled-components": "^6.1.1",
     "universal-cookie": "^6.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve dist -s -n -L -p $PORT",
     "build": "react-scripts build",
     "serve": "serve build",
     "test": "react-scripts test",

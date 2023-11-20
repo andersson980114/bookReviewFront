@@ -26,7 +26,7 @@ const RegisterPage = () => {
   const submit = async (data) => {
     try {
       const response = await cloudinaryService.uploadFile(file);
-      console.log('File uploaded:', response);
+      //console.log('File uploaded:', response);
       data.foto = response.url
     } catch (error) {
       console.error('Error uploading file:', error);
@@ -36,7 +36,7 @@ const RegisterPage = () => {
     if(register){
       navigate("/login")
     }
-    console.log(data);
+    //console.log(data);
     reset();
   };
 
