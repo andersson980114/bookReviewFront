@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { rendersStars } from '../utils/rendersStars';
 import { useAuth } from '../contexts/AuthContext/AuthContext';
-import { MdEdit, MdDelete } from 'react-icons/md';
+import { MdDelete } from 'react-icons/md';
 import { useReview } from '../contexts/ReviewContext/ReviewContext';
 
 const ReviewItem = ({ review }) => {

@@ -1,5 +1,5 @@
 import { useForm, Controller } from 'react-hook-form';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import ReactStars from "react-rating-stars-component";
 import { useState } from 'react';
@@ -11,7 +11,8 @@ import { useReview } from '../contexts/ReviewContext/ReviewContext';
 const NewReviewForm = () => {
     const params = useParams();
     const { user } = useAuth();
-    const { getReviewBookById, setReview } = useReview()
+    //const { getReviewBookById, setReview } = useReview()
+    const {  setReview } = useReview()
     const { control, handleSubmit, reset } = useForm();
     const [rating, setRating] = useState(0);
     const [key, setKey] = useState(0);

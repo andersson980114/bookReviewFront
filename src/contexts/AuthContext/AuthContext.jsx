@@ -2,8 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom'; 
 
 import { authenticate, getRefreshToken, getUserById, registerUser } from '../../utils/authApi';
-import Cookies from 'universal-cookie';
-import cloudinaryService from '../../utils/cloudinaryService';
+import Cookies from 'universal-cookie'; 
 
 const AuthContext = createContext();
 

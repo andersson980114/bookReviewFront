@@ -3,6 +3,27 @@ import { rendersStars } from '../utils/rendersStars';
 import styled from 'styled-components';
 import { useBook } from '../contexts/BookContext/BookContext';
 
+
+
+const BookDetails = () => { 
+  const { selectedBook } = useBook()
+  const { cover, nombre, autor, calificacion, descripcion } = selectedBook || {};
+
+  return (
+    <BookDetailsContainer>
+      <BookCoverContainer>
+        <BookCover src={cover} alt="Book Cover" />
+      </BookCoverContainer>
+      <BookInfoContainer>
+        {nombre && <Title>{nombre}</Title>}
+        {autor && <Author>{autor.nombre} {autor.apellido}</Author>}
+        {calificacion && <StarsContainer>{rendersStars(calificacion)}</StarsContainer>}
+        {descripcion && <Description>{descripcion}</Description>}
+      </BookInfoContainer>
+    </BookDetailsContainer>
+  );
+};
+
 const BookDetailsContainer = styled.div`
   display: flex;
   align-items: flex-start;  
@@ -59,24 +80,4 @@ const BookCover = styled.img`
 const Description = styled.p`
   text-align: justify;
 `;
-
-const BookDetails = () => { 
-  const { selectedBook } = useBook()
-  const { cover, nombre, autor, calificacion, descripcion } = selectedBook || {};
-
-  return (
-    <BookDetailsContainer>
-      <BookCoverContainer>
-        <BookCover src={cover} alt="Book Cover" />
-      </BookCoverContainer>
-      <BookInfoContainer>
-        {nombre && <Title>{nombre}</Title>}
-        {autor && <Author>{autor.nombre} {autor.apellido}</Author>}
-        {calificacion && <StarsContainer>{rendersStars(calificacion)}</StarsContainer>}
-        {descripcion && <Description>{descripcion}</Description>}
-      </BookInfoContainer>
-    </BookDetailsContainer>
-  );
-};
-
 export default BookDetails;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Container, Row} from 'react-bootstrap';
+import { Card, Col, Row} from 'react-bootstrap';
 import styled from 'styled-components';
 import { useAuth } from '../../contexts/AuthContext/AuthContext';
 import { Navigate } from 'react-router-dom' 

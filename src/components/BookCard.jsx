@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
-import { FaHeart , FaStar } from 'react-icons/fa';
-import { PiHeartDuotone } from "react-icons/pi";
+import styled from 'styled-components'; 
 import { useAuth } from '../contexts/AuthContext/AuthContext';
 import { Link } from 'react-router-dom';
 import {rendersStars} from '../utils/rendersStars'
 
 const CustomCard = ({book}) => { 
-  const { _id: id, cover, nombre, autor, calificacion } = book
-  const { isAuth } = useAuth();
+    const { _id: id, cover, nombre, autor, calificacion } = book
+  /*   const { isAuth } = useAuth(); */
     const [isLiked, setIsLiked] = useState(false);
-
+/* 
     const handleLikeClick = () => {
         setIsLiked(!isLiked);
-    };
+    }; */
  
     return (
         <CardContainer>

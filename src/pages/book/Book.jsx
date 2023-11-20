@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import BookDetails from '../../components/BookDetails'
 import ReviewSection from '../../components/ReviewSection'

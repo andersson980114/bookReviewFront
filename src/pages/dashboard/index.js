@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, InputGroup, Form, Button, Badge } from 'react-bootstrap';
+import { Container, InputGroup, Form, Button } from 'react-bootstrap';
 import BookCard from '../../components/BookCard';
 import { FaSearch } from 'react-icons/fa';
 import { useBook } from '../../contexts/BookContext/BookContext';
