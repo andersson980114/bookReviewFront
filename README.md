@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+<h1 align="center"> Book Review Front </h1> <br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#"> 
+    <img  src="https://github.com/andersson980114/bookReviewFront/assets/70853111/9204bd25-0fca-41fe-bf7b-19d44e1390c7" width="540">
+  </a>
+</p>
+ 
 
-## Available Scripts
+<p align="center">
+  Contruido con React.js
+</p>
+ 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduccion](#Introduccion)
+- [Características](#Características)
+- [Instalaciones](#Instalaciones)
+- [Variables_de_Entorno](#Variables_de_Entorno)
+- [Ejecución](#Ejecución) 
+- [Prueba_Despliegue](#Prueba_Despliegue)
+- [Vistas](#Vistas)
 
-### `npm start`
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduccion
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este Front fue creado para la prueba tecnica de ControlBox, dando solución desde la parte del Front a un sistema de reseñas de libros. A continuación encontraremos una guia de instalación, ejecucion y prueba de la Interfaz de usuario.
+ 
 
-### `npm test`
+## Características
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Algunas de las Características de esta Rest Api son:
 
-### `npm run build`
+* Vista de Registro de Usuario.
+* Vista de Login de usuario.
+* Vista de los libros.
+* Vista de la descripcion de los libros.
+* Reseñas de los libros.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalaciones
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para realizar las siguientes instalaciones es necesario tener ya instalado [Node.js](https://nodejs.org/es/download/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Posteriormente se requiere clonar el repositorio
 
-### `npm run eject`
+```bash
+# Clone
+$ git clone https://github.com/andersson980114/bookReviewFront.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Una vez clonado es necesario ubicarnos desde la terminal en la carpeta raiz del proyecto y ejecutar la siguiente linea para instalar las dependencias.
+```bash
+# Dependencias
+$ npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#Variables_de_Entorno
+Una vez instaladas las dependencias debemos añadir las variables de entorno en un archivo .env.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# .env 
+REACT_APP_API_URL=
+REACT_APP_CLOUDINARY_CLOUD_NAME=
+REACT_APP_CLOUDINARY_API_KEY=
+REACT_APP_CLOUDINARY_API_SECRET=
+REACT_APP_CLOUDINARY_URL=
+REACT_APP_CLOUDINARY_UPLOAD_PRESET=
+```
 
-## Learn More
+## Ejecución
+Para la ejecución del aplicativo se debe ubicar en la raiz del proyecto desde la terminal, postariormente escribir la linea.
+```bash
+# npm 
+$ npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Esto iniciará la ejecución y nos mostrará el puerto donde se ejecuta nuestra api.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Vistas
+<p align="center">
+  <a href="#"> 
+    <img  src="https://github.com/andersson980114/bookReviewFront/assets/70853111/9204bd25-0fca-41fe-bf7b-19d44e1390c7" width="540">
+  </a>
+</p>
+ 
+<p align="center">
+  <a href="#"> 
+    <img  src="https://github.com/andersson980114/bookReviewFront/assets/70853111/41dda85d-e176-46fa-abd7-03417b7bad26" width="540">
+  </a>
+</p>
 
-### Code Splitting
+<p align="center">
+  <a href="#"> 
+    <img  src="https://github.com/andersson980114/bookReviewFront/assets/70853111/c0bb072a-f746-475a-9149-7e632afc239c" width="540">
+  </a>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="center">
+  <a href="#"> 
+    <img  src="https://github.com/andersson980114/bookReviewFront/assets/70853111/52ac775c-4f4a-4498-a586-afa120e58251" width="540">
+  </a>
+</p>
 
-### Analyzing the Bundle Size
+<p align="center">
+  <a href="#"> 
+    <img  src="https://github.com/andersson980114/bookReviewFront/assets/70853111/7c6db7ad-ad62-4923-9911-0bf791a1d20e" width="540">
+  </a>
+</p>
+ 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
